@@ -6,6 +6,8 @@ std::string question;
 std::string answer = "YN";
 std::string trash;
 
+Test
+
 struct eseteam
 {
 	std::string firstname;
@@ -19,7 +21,7 @@ eseteam newteam[2];
 int main() {
 again:
 	std::cout << std::endl << std::endl;
-	
+	Test = 1;
 	std::cout << "Firstname :" << std::endl;
 	//std::cin >> newteam[0].firstname;
 	std::cin >> trash;
