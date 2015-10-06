@@ -11,14 +11,17 @@ struct eseteam
 	std::string firstname;
 	std::string lastname;
 	std::string birthdate;
-	int number;
+	int number=0;
 };
 
 eseteam newteam[2];
 
 int main() {
+	if(newteam[0].number > 3000){
+		std::cout << "That is one BIG Number! be careful!"<< std::endl;
+	}
 again:
-	std::cout << std::endl << std::endl;
+	std::cout << "Your Data:" << std::endl;
 	
 	std::cout << "Firstname :" << std::endl;
 	//std::cin >> newteam[0].firstname;
