@@ -6,7 +6,7 @@ std::string question;
 std::string answer = "YN";
 std::string trash;
 
-Test
+int Test;
 
 struct eseteam
 {
