@@ -56,6 +56,15 @@ again:
 			goto reanswer;
 		}
 	}
+	if(newteam[0].firstname==newteam[1].firstname && newteam[0].lastname==newteam[1].lastname){
+		std::cout << "YOUR NAME IS A LIE!!!" << std::endl;	
+	}
+	if(newteam[0].firstname==newteam[2].firstname && newteam[0].lastname==newteam[2].lastname){
+		std::cout << "YOUR NAME IS A LIE!!!" << std::endl;	
+	}
+	if(newteam[1].firstname==newteam[2].firstname && newteam[1].lastname==newteam[2].lastname){
+		std::cout << "YOUR NAME IS A LIE!!!" << std::endl;	
+	}
 	system("pause >nul");
 	return 0;
 }
