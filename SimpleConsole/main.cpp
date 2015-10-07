@@ -5,6 +5,7 @@ std::string name;
 std::string question;
 std::string answer = "YN";
 std::string trash;
+int number_handler =0;
 
 struct eseteam
 {
@@ -21,22 +22,31 @@ int main() {
 		std::cout << "That is one BIG Number! be careful!"<< std::endl;
 	}
 again:
+	if(newteam[0].number!=0 ){
+		number_handler= 1;
+	}
+	if(newteam[1].number!=0 ){
+		number_handler= 2;
+	}
+	if(newteam[2].number!=0 ){
+		number_handler= 0;
+	} //overwriting in a circle
 	std::cout << "Your Data:" << std::endl;
 	
 	std::cout << "Firstname :" << std::endl;
 	//std::cin >> newteam[0].firstname;
 	std::cin >> trash;
-	newteam[0].firstname = "Why is this not my firstname?";
+	newteam[number_handler].firstname = "Why is this not my firstname?";
 	std::cout << "Lastname :" << std::endl;
 	//std::cin >> newteam[0].lastname;
 	std::cin >> trash;
-	newteam[0].lastname = "Where is my inserted lastname?";
+	newteam[number_handler].lastname = "Where is my inserted lastname?";
 	std::cout << "Birthdate :" << std::endl;
 	//std::cin >> newteam[0].birthdate;
 	std::cin >> trash;
-	newteam[0].birthdate = "01.01.2223 WTF?";
-	newteam[0].number = 1337;
-	std::cout << "Your entered Information: " << std::endl << "Firstname: " << newteam[0].firstname << std::endl << "Lastname: " << newteam[0].lastname << std::endl << "Birthdate: " << newteam[0].birthdate << std::endl << "Number: " << newteam[0].number << std::endl << std::endl;
+	newteam[number_handler].birthdate = "01.01.2223 WTF?";
+	newteam[number_handler].number = 1337;
+	std::cout << "Your entered Information: " << std::endl << "Firstname: " << newteam[number_handler].firstname << std::endl << "Lastname: " << newteam[number_handler].lastname << std::endl << "Birthdate: " << newteam[number_handler].birthdate << std::endl << "Number: " << newteam[number_handler].number << std::endl << std::endl;
 	reanswer:
 	std::cout << "Right? <Y/N>";
 	std::cin >> question;
