@@ -72,11 +72,19 @@ while(again){
 		if(newteam[1].firstname==newteam[2].firstname && newteam[1].lastname==newteam[2].lastname){
 			std::cout << "YOUR NAME IS A LIE!!!" << std::endl;	
 		}
+		
+		for(const eseteam &member :  newteam){
+			std::cout << "Number: " << member.number << std::endl;
+			std::cout << "Firstname: " << member.firstname << std::endl;
+			std::cout << "Lastname: " <<  member.lastname << std::endl;
+			std::cout << "Birthdate: " << member.birthdate << std::endl;	
+		}
+		
 	}
 	
 	
 	
 }
 system("pause >nul");
-	return 0;
+return 0;
 }
