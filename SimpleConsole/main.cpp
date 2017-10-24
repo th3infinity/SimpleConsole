@@ -19,7 +19,9 @@ struct eseteam
 eseteam newteam[2];
 
 int main() {
-again:
+bool again = true;
+
+while(again){
 	std::cout << std::endl << std::endl;
 	Test = 1;
 	std::cout << "Firstname :" << std::endl;
@@ -44,13 +46,13 @@ again:
 		std::cout << "YOU LIE!!!" << std::endl;
 		Sleep(5000);
 		std::cout << "Pls Enter correct Information!" << std::endl;
-		goto again;
+		break;
 	}
 	else {
 		if (question[0] == answer[1]) {
 			std::cout << "Then pls correct it!" << std::endl;
 			Sleep(1000);
-			goto again;
+			break;
 		}
 		else {
 			std::cout << "Wrong Answer!!!" << std::endl;
@@ -69,4 +71,6 @@ again:
 	}
 	system("pause >nul");
 	return 0;
+}
+
 }
