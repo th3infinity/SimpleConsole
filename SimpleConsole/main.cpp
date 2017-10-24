@@ -16,7 +16,7 @@ struct eseteam
 	int number;
 };
 
-eseteam newteam[2];
+eseteam newteam[3];
 
 int main() {
 bool again = true;
@@ -27,6 +27,8 @@ while(again){
 	std::cout << "Firstname :" << std::endl;
 	//std::cin >> newteam[0].firstname;
 	std::cin >> trash;
+	newteam[1] = {"Daniel","Wiese","01.01.1970",5};
+	newteam[2] = {"Lu","Vo","10.06.1995",6};
 	newteam[0].firstname = "Why is this not my firstname?";
 	std::cout << "Lastname :" << std::endl;
 	//std::cin >> newteam[0].lastname;
